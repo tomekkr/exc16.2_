@@ -1,4 +1,4 @@
-enum NumberAndFace {
+enum Symbol {
     TWO("Two", "Dwójka"),
     THREE("Three", "Trójka"),
     FOUR("Four", "Czwórka"),
@@ -16,7 +16,7 @@ enum NumberAndFace {
     private final String descriptionEN;
     private final String descriptionPL;
 
-    NumberAndFace(String descriptionEN, String descriptionPL) {
+    Symbol(String descriptionEN, String descriptionPL) {
         this.descriptionEN = descriptionEN;
         this.descriptionPL = descriptionPL;
     }

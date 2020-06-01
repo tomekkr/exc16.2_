@@ -1,14 +1,14 @@
 class Card {
-    private NumberAndFace numberAndFace;
+    private Symbol symbol;
     private Suit suit;
 
-    public Card(NumberAndFace numberAndFace, Suit suit) {
-        this.numberAndFace = numberAndFace;
+    public Card(Symbol symbol, Suit suit) {
+        this.symbol = symbol;
         this.suit = suit;
     }
 
-    public NumberAndFace getNumberAndFace() {
-        return numberAndFace;
+    public Symbol getSymbol() {
+        return symbol;
     }
 
     public Suit getSuit() {

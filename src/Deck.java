@@ -13,11 +13,11 @@ class Deck {
     }
 
     public void addAllCards() {
-        List<NumberAndFace> numbersAndFaces = List.of(NumberAndFace.values());
+        List<Symbol> symbols = List.of(Symbol.values());
         List<Suit> suits = List.of(Suit.values());
-        for (NumberAndFace numberAndFace : numbersAndFaces) {
+        for (Symbol synbol : symbols) {
             for (Suit suit : suits) {
-                cards.add(new Card(numberAndFace, suit));
+                cards.add(new Card(synbol, suit));
             }
         }
     }
@@ -31,14 +31,14 @@ class Deck {
 
     private void printInPolish() {
         for (int i = 0; i < getCards().size(); i++) {
-            System.out.println(cards.get(i).getNumberAndFace().getDescriptionPL()
+            System.out.println(cards.get(i).getSymbol().getDescriptionPL()
                     + " " + cards.get(i).getSuit().getDescriptionPL());
         }
     }
 
     private void printInEnglish() {
         for (int i = 0; i < getCards().size(); i++) {
-            System.out.println(cards.get(i).getNumberAndFace().getDescriptionEN()
+            System.out.println(cards.get(i).getSymbol().getDescriptionEN()
                     + " of " + cards.get(i).getSuit().getDescriptionEN());
         }
     }
