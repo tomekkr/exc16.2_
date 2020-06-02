@@ -2,22 +2,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Deck {
-    private ArrayList<Card> cards;
+    private List<Card> cards;
 
     public Deck() {
         this.cards = new ArrayList<>();
     }
 
-    public ArrayList<Card> getCards() {
+    public List<Card> getCards() {
         return cards;
     }
 
     public void addAllCards() {
         List<Symbol> symbols = List.of(Symbol.values());
         List<Suit> suits = List.of(Suit.values());
-        for (Symbol synbol : symbols) {
+        for (Symbol symbol : symbols) {
             for (Suit suit : suits) {
-                cards.add(new Card(synbol, suit));
+                cards.add(new Card(symbol, suit));
             }
         }
     }
